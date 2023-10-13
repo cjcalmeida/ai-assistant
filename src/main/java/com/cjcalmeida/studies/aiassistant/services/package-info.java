@@ -1,4 +1,4 @@
 @NonNullApi
-package com.example.application.services;
+package com.cjcalmeida.studies.aiassistant.services;
 
 import org.springframework.lang.NonNullApi;

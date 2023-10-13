@@ -1,4 +1,4 @@
-package com.example.application.services;
+package com.cjcalmeida.studies.aiassistant.services;
 
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import dev.hilla.BrowserCallable;
