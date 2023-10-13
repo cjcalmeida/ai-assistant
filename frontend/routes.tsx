@@ -9,10 +9,7 @@ export const routes: RouteObject[] = [
   {
     element: <MainLayout />,
     handle: { title: 'Main' },
-    children: [
-      { path: '/', element: <HelloWorldView />, handle: { title: 'Hello World' } },
-      { path: '/about', element: <AboutView />, handle: { title: 'About' } },
-    ],
+    children: [{ path: '/', element: <HelloWorldView />, handle: { title: 'Chat IA' } }],
   },
 ];
 
