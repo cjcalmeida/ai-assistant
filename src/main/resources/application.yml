@@ -1,0 +1,26 @@
+spring:
+  devtools:
+    restart:
+      additional-exclude: dev/hilla/openapi.json # Workaround for https://github.com/vaadin/hilla/issues/842
+  jpa:
+    defer-datasource-initialization: true
+  mustache:
+    check-template-location: false
+server:
+  port: ${PORT:8080}
+logging:
+  level:
+    org.atmosphere: WARN
+
+# Launch the default browser when starting the application in development mode
+# To improve the performance during development.
+# For more information https://vaadin.com/docs/flow/spring/tutorial-spring-configuration.html#special-configuration-parameters
+vaadin:
+  launch-browser: true
+  whitelisted-packages:
+    - com.vaadin,org.vaadin,dev.hilla,com.example.application
+
+ai-assistant:
+  open-ia:
+    api-key: ${OPEN_IA_API_KEY:demo}
+
